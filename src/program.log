@@ -1,0 +1,37 @@
+16-Feb-24 16:48:56 - =@#$%^=@#$%^=@#$%^=@#$%^=@#$%^=@#$%^=@#$%^=@#$%^=@#$%^=@#$%^=@#$%^=@#$%^=@#$%^=@#$%^=@#$%^
+16-Feb-24 16:50:58 - Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Chandu\Mini_Project\Project\MajorProject\src\main.py", line 246, in <module>
+    sdpObj.runSDP()
+  File "C:\Users\HP\Desktop\Chandu\Mini_Project\Project\MajorProject\src\Service\SDP.py", line 43, in runSDP
+    problem.solve(solver=cvx.SCS)
+  File "C:\Users\HP\Desktop\Chandu\Mini_Project\Project\MajorProject\env\Lib\site-packages\cvxpy\problems\problem.py", line 503, in solve
+    return solve_func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\Chandu\Mini_Project\Project\MajorProject\env\Lib\site-packages\cvxpy\problems\problem.py", line 1086, in _solve
+    self.unpack_results(solution, solving_chain, inverse_data)
+  File "C:\Users\HP\Desktop\Chandu\Mini_Project\Project\MajorProject\env\Lib\site-packages\cvxpy\problems\problem.py", line 1411, in unpack_results
+    raise error.SolverError(
+cvxpy.error.SolverError: Solver 'SCS' failed. Try another solver, or solve with verbose=True for more information.
+16-Feb-24 16:51:04 - Exception occurred
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Chandu\Mini_Project\Project\MajorProject\src\main.py", line 271, in <module>
+    ground_truth = getGroundTruth(discussion_id, filePath)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\Chandu\Mini_Project\Project\MajorProject\src\main.py", line 35, in getGroundTruth
+    post = pd.read_excel(filePath, sheet_name="Sheet1")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\Chandu\Mini_Project\Project\MajorProject\env\Lib\site-packages\pandas\io\excel\_base.py", line 508, in read_excel
+    data = io.parse(
+           ^^^^^^^^^
+  File "C:\Users\HP\Desktop\Chandu\Mini_Project\Project\MajorProject\env\Lib\site-packages\pandas\io\excel\_base.py", line 1616, in parse
+    return self._reader.parse(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\Chandu\Mini_Project\Project\MajorProject\env\Lib\site-packages\pandas\io\excel\_base.py", line 773, in parse
+    sheet = self.get_sheet_by_name(asheetname)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\Chandu\Mini_Project\Project\MajorProject\env\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 582, in get_sheet_by_name
+    self.raise_if_bad_sheet_by_name(name)
+  File "C:\Users\HP\Desktop\Chandu\Mini_Project\Project\MajorProject\env\Lib\site-packages\pandas\io\excel\_base.py", line 624, in raise_if_bad_sheet_by_name
+    raise ValueError(f"Worksheet named '{name}' not found")
+ValueError: Worksheet named 'Sheet1' not found

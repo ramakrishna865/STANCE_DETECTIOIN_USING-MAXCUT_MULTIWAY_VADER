@@ -1,0 +1,5 @@
+author_id,text,avg_positive_score,avg_negative_score,overall_sentiment_score
+1,The movie was not good. It was actually quite bad.,1.0,-1.0,2.0
+2,I love this book! It's fantastic.,1.0,0,1.0
+3,The weather today is terrible.,1.0,0,1.0
+4,The concert was amazing.,1.0,0,1.0
