@@ -1,0 +1,13 @@
+
+In the rapidly evolving landscape of online discussions, stance detection plays a crucial role in understanding user perspectives and sentiment. This project explores three distinct methodologies—Max-Cut, Multiway-Cut, and VADER sentiment analysis—to enhance stance detection within discussion threads. By converting conversation trees into weighted user-interaction graphs, we apply the Max-Cut and Multiway-Cut algorithms to identify significant stance partitions. VADER sentiment analysis further refines these partitions by scoring and aggregating sentiment within each cluster. The combined approach demonstrates improved accuracy and depth in stance classification, offering valuable insights into user interactions and sentiment dynamics. This multifaceted framework not only benchmarks these techniques but also highlights areas for future research and potential enhancements.
+
+INTRODUCTION:
+Stance detection aims to identify people's attitudes or opinions (e.g., Favor or Against) expressed in texts towards a specific topic or person, usually controversial or political. Social media platforms like Twitter and Facebook play a crucial role in sharing opinions. However, they present a challenge as opinions can be scattered across texts, making it difficult to identify the target. While current methods have made progress in detecting stance when the target is known, they struggle when targets are implicit in the text.
+Stance detection is crucial for understanding user perspectives in online discussions. Traditional methods often rely on supervised learning, requiring extensive labeled data, which is not always feasible for dynamic, user-generated content. This project explores an unsupervised approach to stance detection using three methodologies: Max-Cut, Multiway-Cut, and VADER sentiment analysis.
+The Max-Cut algorithm identifies significant opposing stances by maximizing edge weights between two partitions in a user-interaction graph. Multiway-Cut extends this by creating multiple clusters to capture a wider range of opinions. VADER sentiment analysis assigns stances within these clusters based on aggregated sentiment scores.
+Our combined framework addresses the limitations of conventional methods, offering a robust solution for both binary and nuanced stance detection in online discussions. This paper presents the methodology, implementation, and results, and discusses potential improvements for future research.
+In summary, our contributions are as follows:
+• Introduction of a Unsupervised structure-based stance detection using Multiway-Cut 
+  Algorithms.
+•Unsupervised structure-based stance detection using Max cut Algorithm.
+•Unsupervised structure-based stance detection using Vader  Algorithm.
